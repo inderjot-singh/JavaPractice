@@ -8,7 +8,13 @@ public class Javaifelse {
 
 	public static void main(String[] args) {
 		System.out.println("Please enter N: ");
-		int N = scanner.nextInt();
+		int N;
+		if(scanner.hasNextInt())
+			N = scanner.nextInt(); // if there is another number  
+		else 
+		     N = 0; // nothing added in the input
+		
+		//N = scanner.nextInt();
 		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 		// System.out.println("Enter N :"+N);
